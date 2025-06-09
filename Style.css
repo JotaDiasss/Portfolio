@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
+
+* {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+/*------------------------------------------------------------*/
+
+body {
+  background-image: url("assets/Stars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em;
+
+  background-image: url("assets/Stars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.coluna {
+  flex: 1;
+  padding: 1.3em;
+  text-align: center;
+}
+
+/*------------------------------------------------------------*/
+
+h1 {
+  font-weight: bold;
+  text-align: end;
+  margin-bottom: 2em;
+}
+
+p {
+  text-align: end;
+}
+
+/*------------------------------------------------------------*/
+
+.imagem-circular {
+  width: 20em;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/*------------------------------------------------------------*/
+
+h3 {
+  text-align: start;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: start;
+  margin-bottom: 1em;
+}
+
+.tools img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.tools img:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: white;
+}
+
+/*------------------------------------------------------------*/
+
+.contatos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em;
+}
+
+.contatos img {
+  width: 20em;
+  object-fit: contain;
+
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.contatos img:hover {
+  transform: scale(1.1);
+  filter: invert(30%);
+}
+
+/*------------------------------------------------------------*/
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 4em;
+}
+
+.imagem-esquerda img {
+  width: 40em;
+  border-radius: 5%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.imagem-esquerda img:hover {
+  transform: scale(1.1);
+}
+
+.description1 h1 {
+  text-align: start;
+  margin-left: 2em;
+}
+
+.description1 p {
+  text-align: start;
+  margin-left: 4em;
+}
+
+.description1 img {
+  width: 30em;
+  margin-top: 4em;
+  margin-left: 4em;
+}
+
+.imglink img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.imglink img:hover {
+  transform: scale(1.1);
+}
+
+/*------------------------------------------------------------*/
+
+.container3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 4em;
+}
+
+.imagem-direita img {
+  width: 40em;
+  border-radius: 5%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.imagem-direita img:hover {
+  transform: scale(1.1);
+}
+
+.description2 h1 {
+  margin-right: 2em;
+  text-align: end;
+}
+
+.description2 p {
+  margin-right: 4em;
+  text-align: end;
+}
+
+.description2 img {
+  width: 30em;
+  margin-top: 4em;
+  margin-right: 4em;
+  margin-left: 8em;
+}
+
+/*------------------------------------------------------------*/
+
+.fade-scale-img {
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 2s ease-out, opacity 2s ease-out;
+}
+
+.fade-scale-img.show {
+  transform: scale(1);
+  opacity: 1;
+}
