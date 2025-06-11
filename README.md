@@ -33,7 +33,9 @@ Este é um site de portfólio pessoal desenvolvido em HTML, CSS e JavaScript, co
 
 ## 📷 Pré-visualização
 
-> ![Captura de tela da home](assets/Perfil.jpg)
+> ![Captura de tela da Index](captures/Index.png)
+> ![Captura de tela da Experiences](captures/Experiences.png)
+> ![Captura de tela da Certifications](captures/Certifications.png)
 
 ## 📬 Contato
 
