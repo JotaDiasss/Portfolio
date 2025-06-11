@@ -5,7 +5,10 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  color: yellow;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*------------------------------------------------------------*/
@@ -22,11 +25,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 4em;
-
-  background-image: url("assets/Stars.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
 }
 
 .coluna {
@@ -101,7 +99,6 @@ h3 {
 .contatos img {
   width: 20em;
   object-fit: contain;
-
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
@@ -206,4 +203,61 @@ h3 {
 .fade-scale-img.show {
   transform: scale(1);
   opacity: 1;
+}
+
+/*------------------------------------------------------------*/
+
+.navbar {
+  border: 0.2em solid white;
+  padding: 15px 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30em;
+  margin-left: 5em;
+}
+
+.nav-list li a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 2s ease-out, opacity 2s ease-out;
+}
+
+.nav-list li a:hover {
+  text-decoration: underline;
+  opacity: 70%;
+}
+
+/*------------------------------------------------------------*/
+
+.certificados > div {
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
+
+.certificados img {
+  width: 100%;
+  max-width: 30em;
+  height: auto;
+  border-radius: 5%;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.certificados img:hover {
+  transform: scale(1.1);
+}
+
+/*------------------------------------------------------------*/
+
+
+.certificado-titulo {
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: bold;
 }
